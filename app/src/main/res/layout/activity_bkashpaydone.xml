@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E3E3EA"
+    tools:context=".bkashpaydone">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/metrobackground" />
+
+            <ImageButton
+                android:id="@+id/homeimg"
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:layout_gravity="right"
+                android:layout_margin="10dp"
+                android:backgroundTint="#E04F5F"
+                android:padding="5dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/homebutton" />
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="40dp"
+                android:background="#51C680"
+                android:gravity="center"
+                android:text="My Wallet"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:text="My Wallet"
+                    android:textAlignment="center"
+                    android:textColor="#4CAF50"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <EditText
+
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:background="#ED1DDC69"
+                    android:hint="70 Tk "
+                    android:textAlignment="center"
+                    android:textColor="#FFEB3B"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="Due"
+                    android:textAlignment="center"
+                    android:textColor="#4CAF50"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/etinput"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:background="#ED1DDC69"
+                    android:hint="00 Tk"
+                    android:textAlignment="center"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="318dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#FFFFFF"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:background="#FFFFFF"
+                        android:padding="10dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/paydone" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Payment Successful"
+                        android:textAlignment="center"
+                        android:textColor="#51C680"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginBottom="50dp"
+                        android:background="#ED1DDC69"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal"
+                                android:scaleType="fitStart"
+                                android:text="Time"
+                                android:textColor="#0A0B0B"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal"
+                                android:scaleType="fitStart"
+                                android:text="10:50PM 10/08/22 "
+                                android:textColor="#0A0B0B"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:layout_width="180dp"
+                                android:layout_height="5dp"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="5dp"
+                                android:background="#51C680"
+                                android:textAlignment="center" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal"
+                                android:scaleType="fitStart"
+                                android:text="Total TK"
+                                android:textColor="#0A0B0B"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal"
+                                android:scaleType="fitStart"
+                                android:text="100TK"
+                                android:textColor="#0A0B0B"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal"
+                                android:text="Transaction ID"
+                                android:textColor="#181918"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal"
+                                android:text="9CDJFC585F4"
+                                android:textColor="#181918"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:layout_width="180dp"
+                                android:layout_height="5dp"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="5dp"
+                                android:background="#51C680"
+                                android:textAlignment="center" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal"
+                                android:scaleType="fitStart"
+                                android:text="Due Detucted"
+                                android:textColor="#0A0B0B"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_horizontal"
+                                android:scaleType="fitStart"
+                                android:text="30 TK"
+                                android:textColor="#0A0B0B"
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:background="#FFFFFF">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal"
+        android:weightSum="5">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/homebtn"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="#FFFFFF"
+                android:scaleType="centerInside"
+                android:src="@drawable/homeicon" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Home"
+                android:textColor="#51C680"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/schedule"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="#FFFFFF"
+                android:scaleType="fitCenter"
+                android:src="@drawable/scheduleicon" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Schedule"
+                android:textColor="#51C680"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/qrscan"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="#FFFFFF"
+                android:scaleType="fitCenter"
+                android:src="@drawable/qrcode" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="QR Scan"
+                android:textColor="#51C680"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/help"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="#FFFFFF"
+                android:scaleType="fitCenter"
+                android:src="@drawable/helpicon" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Help"
+                android:textColor="#51C680"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/wallet"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="#FFFFFF"
+                android:scaleType="fitCenter"
+                android:src="@drawable/walleticon" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Wallet"
+                android:textColor="#51C680"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
